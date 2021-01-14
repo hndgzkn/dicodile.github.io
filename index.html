@@ -1,0 +1,142 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Welcome to dicodile’s documentation! &#8212; dicodile  documentation</title>
+    <link rel="stylesheet" href="_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/language_data.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+   
+  <link rel="stylesheet" href="_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="welcome-to-dicodile-s-documentation">
+<h1>Welcome to dicodile’s documentation!<a class="headerlink" href="#welcome-to-dicodile-s-documentation" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+</div>
+<div class="section" id="dicodile">
+<h2>DiCoDiLe<a class="headerlink" href="#dicodile" title="Permalink to this headline">¶</a></h2>
+<p>Package to run the experiments for the preprint paper <a class="reference external" href="https://arxiv.org/abs/1901.09235">Distributed
+Convolutional Dictionary Learning (DiCoDiLe): Pattern Discovery in Large
+Images and Signals</a>.</p>
+<div class="section" id="requirements">
+<h3>Requirements<a class="headerlink" href="#requirements" title="Permalink to this headline">¶</a></h3>
+<p>All the tests were done with python3.6. This package depends on the
+python library <code class="docutils literal notranslate"><span class="pre">numpy</span></code>, <code class="docutils literal notranslate"><span class="pre">matplotlib</span></code>, <code class="docutils literal notranslate"><span class="pre">scipy</span></code>, <code class="docutils literal notranslate"><span class="pre">mpi4py</span></code>,
+<code class="docutils literal notranslate"><span class="pre">joblib</span></code>. The package can be installed with the following command run
+from the root of the package.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>pip install  -e .
+</pre></div>
+</div>
+</div>
+<div class="section" id="usage">
+<h3>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h3>
+<p>All experiments are with <code class="docutils literal notranslate"><span class="pre">mpi4py</span></code> and will try to spawned workers
+depending on the parameters set in the experiments. If you need to use
+an <code class="docutils literal notranslate"><span class="pre">hostfile</span></code> to configure indicate to MPI where to spawn the new
+workers, you can set the environment variable
+<code class="docutils literal notranslate"><span class="pre">MPI_HOSTFILE=/path/to/the/hostfile</span></code> and it will be automatically
+detected in all the experiments. Note that for each experiments you
+should provide enough workers to allow the script to run.</p>
+<p>All figures can be generated using scripts in <code class="docutils literal notranslate"><span class="pre">benchmarks</span></code>. Each
+script will generate and save the data to reproduce the figure. The
+figure can then be plotted by re-running the same script with the
+argument <code class="docutils literal notranslate"><span class="pre">--plot</span></code>. The figures are saved in pdf in the
+<code class="docutils literal notranslate"><span class="pre">benchmarks_results</span></code> folder. The computation are cached with
+<code class="docutils literal notranslate"><span class="pre">joblib</span></code> to be robust to failures.</p>
+</div>
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="#">dicodile</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="#">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, Inria.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.4.4</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="_sources/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
