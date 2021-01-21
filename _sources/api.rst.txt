@@ -1,0 +1,15 @@
+.. _api_documentation:
+
+=================
+API Documentation
+=================
+
+.. currentmodule:: dicodile
+
+
+.. autosummary::
+   :toctree: generated/
+
+   dicodile
+   update_d
+   update_z
